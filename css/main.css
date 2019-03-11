@@ -1310,6 +1310,7 @@ body.menu-is-open {
   letter-spacing: -0.03rem;
   margin-top: 70px;
   margin-bottom: 4.8rem;
+  text-align: center;
 }
 
 .subhead {
@@ -1319,10 +1320,11 @@ body.menu-is-open {
   line-height: 1.333;
   text-transform: uppercase;
   letter-spacing: .25rem;
-  color: #793ea5;
+  color: #007ab5;
   margin-top: 0;
   margin-bottom: 3rem;
   position: relative;
+  text-align: center;
 }
 
 .item-title {
@@ -2764,7 +2766,7 @@ html.no-csstransitions .home-content__main {
 
 .s-works {
   padding-top: 18rem;
-  padding-bottom: 18rem;
+  padding-bottom: 1rem;
   position: relative;
 }
 
@@ -2808,7 +2810,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .masonry .grid-sizer, .masonry__brick {
-  width: 50%;
+  width: 100%;
 }
 
 .masonry__brick {
@@ -3338,7 +3340,7 @@ html.no-csstransitions .home-content__main {
 
 .s-contact {
   padding-top: 9.2rem;
-  padding-bottom: 19rem;
+  padding-bottom: 10rem;
   background-color: rgb(3, 127, 209);
   color: rgba(255, 255, 255, 0.6);
   text-align: center;
@@ -3394,7 +3396,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .contact-email a:hover, .contact-email a:focus {
-  border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 3px solid #007ab582;
 }
 
 /* ------------------------------------------------------------------- 
@@ -3536,7 +3538,7 @@ footer {
   padding-top: 5rem;
   padding-bottom: 1rem;
   color: rgba(255, 255, 255, 0.6);
-  background-color: #13161b;
+  background-color: #13161b00;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   text-align: center;
   position: relative;
@@ -3653,11 +3655,19 @@ footer a {
 /* Contact */
 
 .bl-contact {
-  background-color: #037FD1;
+  background-color:#13161b ;
   display: flex;
   justify-content: space-between;
 }
 
+@media (max-width:500px) {
+  .bl-contact{
+    flex-direction: column;
+  }
+  .contact-map {
+    width: 100%;
+  }
+}
 .contact-map {
   width: 50%;
 }
