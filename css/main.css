@@ -870,10 +870,10 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .btn.btn--primary:hover, button.btn--primary:hover, input[type="submit"].btn--primary:hover, input[type="reset"].btn--primary:hover, input[type="button"].btn--primary:hover, .btn.btn--primary:focus, button.btn--primary:focus, input[type="submit"].btn--primary:focus, input[type="reset"].btn--primary:focus, input[type="button"].btn--primary:focus {
-  background: #13161b;
-  border-color: #13161b;
+ 
+  background: #121212;
+  border-color: #121212;
 }
-
 /* button modifiers
  * ------------------------------------------------- */
 
@@ -1949,7 +1949,7 @@ body.menu-is-open {
 .home-content {
   display: table-cell;
   vertical-align: middle;
-  padding-top: 0.6rem;
+  padding-top: 0.2rem;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -2525,8 +2525,8 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 
 .s-about {
-  padding-top: 18rem;
-  padding-bottom: 18rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   background-color: #121212;
   position: relative;
 }
@@ -2569,6 +2569,7 @@ html.no-csstransitions .home-content__main {
   position: relative;
   min-height: 24.6rem;
   margin-bottom: 3rem;
+  
 }
 
 .item-process:nth-child(2n+1) {
@@ -2587,6 +2588,7 @@ html.no-csstransitions .home-content__main {
 @media only screen and (max-width:1000px) {
   .item-process:nth-child(2n+1) {
     padding-right: 25px;
+  
   }
   .item-process:nth-child(2n+2) {
     padding-left: 25px;
@@ -2611,6 +2613,7 @@ html.no-csstransitions .home-content__main {
   }
   .process h4 {
     padding-left: 6rem;
+    padding-bottom: 10px;
   }
   .process h4::before {
     font-size: 1.8rem;
@@ -2626,8 +2629,10 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width:400px) {
   .process h4 {
-    padding-left: 5.8rem;
+    padding-left: 4.8rem
+
   }
+
   .process h4::before {
     font-size: 1.6rem;
     height: 39px;
@@ -2782,8 +2787,10 @@ html.no-csstransitions .home-content__main {
   width: 50%;
   height: 100%;
   opacity: .3;
+/*
   background-color: rgba(0, 0, 0, 0.9);
   background-image: url(../images/pattern.jpg);
+*/
   background-size: 760px 380px;
 }
 
@@ -2991,7 +2998,7 @@ html.no-csstransitions .home-content__main {
 @media only screen and (max-width:1000px) {
   .s-works {
     padding-top: 15rem;
-    padding-bottom: 15rem;
+    padding-bottom: 1rem;
   }
 }
 
@@ -3011,6 +3018,7 @@ html.no-csstransitions .home-content__main {
   .masonry__brick {
     float: none;
     width: 100%;
+    padding-bottom: 55px;
   }
   .masonry .item-folio__title, .item-folio__cat {
     font-size: 1.4rem;
@@ -3609,7 +3617,7 @@ footer a {
 }
 
 .ss-go-top a:hover, .ss-go-top a:focus {
-  background-color: #13161b;
+  background-color: #007ab5;
   color: white;
 }
 
@@ -3660,14 +3668,7 @@ footer a {
   justify-content: space-between;
 }
 
-@media (max-width:500px) {
-  .bl-contact{
-    flex-direction: column;
-  }
-  .contact-map {
-    width: 100%;
-  }
-}
+
 .contact-map {
   width: 50%;
 }
@@ -3680,4 +3681,15 @@ footer a {
   width: 100%;
   height: 500px;
   background: #ddd;
+}
+
+@media (max-width:500px) {
+  .bl-contact{
+    flex-direction: column;
+    text-align: center;
+  }
+  .contact-map {
+    width: 100%;
+    text-align: center;
+  }
 }
