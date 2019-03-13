@@ -1583,7 +1583,11 @@ subhead span{
 }
 
 .header-nav a:hover, .header-nav a:focus, .header-nav a:active {
-  color: white;
+  color: #8cb9cf;
+}
+
+.header-nav a.active {
+  color: #007ab5;
 }
 
 .header-nav h3 {
@@ -1660,13 +1664,7 @@ subhead span{
   position: relative;
 }
 
-.header-nav__list a:hover::before {
-  color: #793ea5;
-}
 
-.header-nav__list .current a::before {
-  color: #793ea5;
-}
 
 .header-nav__social {
   list-style: none;
@@ -1686,7 +1684,7 @@ subhead span{
 }
 
 .header-nav__social li a:hover, .header-nav__social li a:focus {
-  color: white;
+  color: #007ab5;
 }
 
 .header-nav__social li:last-child {
@@ -3746,10 +3744,31 @@ footer a {
 
 /*++++++++++++++++End About Us Page++++++++++++++++++++++++*/
 
-.s-about.target-section h4 {
-  margin-top: 1rem;
+.s-about.target-section .value{
+  font-size: 1rem;
 }
-
-.s-about.target-section h3 {
+.s-about.target-section .value h3{
   margin-bottom: 1em;
+  font-size: 2em;
 }
+.s-about.target-section .value h4{
+  margin-top: 1rem;
+  font-size: 1.8em;
+}
+  .about-page .item-folio, .about-page .item-folio img{
+    width: 100%;
+    min-height: 175px;;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .our-team .item-title{
+    text-align: center;
+    font-size: 1em;
+  }
+
+  /* .about-page .item-folio__text{
+    width: 100px;
+    height: 100px;
+    padding: 0px auto;
+  } */
