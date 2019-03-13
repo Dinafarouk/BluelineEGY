@@ -58,7 +58,7 @@
  *
  * ------------------------------------------------------------------- */
 
-html {
+ html {
   font-size: 10px;
 }
 
@@ -73,7 +73,7 @@ html, body {
 }
 
 body {
-  background: #333333;
+  background: #13161b;
   font-family: "Nunito Sans", sans-serif;
   font-size: 1.7rem;
   font-style: normal;
@@ -115,13 +115,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
-  margin-top: 6rem;
-  margin-bottom: 1.8rem;
+  margin-top: 5rem;
+  margin-bottom: 5.8rem;
 }
+
 
 @media only screen and (max-width:600px) {
   h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
-    margin-top: 5.1rem;
+ margin-top: 4.1rem; 
   }
 }
 
@@ -156,7 +157,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-size: 2.4rem;
+  font-size: 2.3rem;
   line-height: 1.25;
 }
 
@@ -1323,12 +1324,15 @@ body.menu-is-open {
   text-transform: uppercase;
   letter-spacing: .25rem;
   color: #007ab5;
-  margin-top: 0;
+  margin-top: -40px;
   margin-bottom: 2rem;
   position: relative;
   text-align: center;
 }
 
+subhead span{
+
+}
 .item-title {
   font-size: 2.4rem;
   line-height: 1.5;
@@ -1341,7 +1345,7 @@ body.menu-is-open {
  * ------------------------------------------------------------------- */
 
 .section-header.has-bottom-sep {
-  padding-bottom: 1.5rem;
+  padding-bottom: 2.3rem;
   position: relative;
   text-align: center;
 }
@@ -2530,9 +2534,9 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 
 .s-about {
-  padding-top: 10rem;
+  padding-top: 15rem;
   padding-bottom: 10rem;
-  background-color: #333333;
+  background-color: #13161b;
   position: relative;
 }
 
@@ -2546,21 +2550,18 @@ html.no-csstransitions .home-content__main {
 }
 
 .process h4 {
-  padding-left: 7rem;
   margin-bottom: 2.1rem;
   position: relative;
 }
 
 .process h4::before {
-  content: counter(ctr);
-  counter-increment: ctr;
+
   display: block;
   font-family: "Montserrat", sans-serif;
   font-size: 2.1rem;
   font-weight: 700;
   text-align: center;
   color: #FFFFFF;
-  background-color: #793ea5;
   height: 48px;
   width: 48px;
   line-height: 48px;
@@ -2574,6 +2575,7 @@ html.no-csstransitions .home-content__main {
   position: relative;
   min-height: 24.6rem;
   margin-bottom: 3rem;
+  border-radius: 90rem;
   
 }
 
@@ -2617,7 +2619,6 @@ html.no-csstransitions .home-content__main {
     padding-bottom: 12rem;
   }
   .process h4 {
-    padding-left: 6rem;
     padding-bottom: 10px;
   }
   .process h4::before {
@@ -2781,23 +2782,25 @@ html.no-csstransitions .home-content__main {
 }
 
 .s-works::before {
-  content: "";
-  display: block;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  bottom: 0;
-  right: 0;
-  width: 50%;
-  height: 100%;
-  opacity: .3;
+    content: "";
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    opacity: .3;
+    background-image: url(../images/pattern.jpg);
+    background-size: 760px 380px;
+  }
 /*
   background-color: rgba(0, 0, 0, 0.9);
-  background-image: url(../images/pattern.jpg);
+
 */
-  background-size: 760px 380px;
-}
+  
 
 /* ------------------------------------------------------------------- 
  * ## bricks/masonry
@@ -3671,15 +3674,15 @@ footer a {
 /* Contact */
 
 .bl-contact {
-  background-color:#4a4a4a ;
+  background-color:#cccccc14 ;
   display: flex;
   justify-content: space-between;
 }
 
 
 .contact-map {
-  width: 100%;
-  height: 100px;
+  width: 50%;
+
 }
 
 .contact-info {
@@ -3688,7 +3691,7 @@ footer a {
 
 #map {
   width: 100%;
-  height: 588px;
+  height: 600px;
   background: #ddd;
 }
 
@@ -3703,13 +3706,50 @@ footer a {
   }
 }
 
-/*++++++++++++++++About Us Page++++++++++++++++++++*/
+                              /*++++++++++++++++About Us Page++++++++++++++++++++*/
 .section-header.has-bottom-sep .s span{
   color: #007ab5;
 }
-/*++++++++++++++++End About Us Page++++++++++++++++++++++++*/
+                         
 
-.list-numbe{
+.list-number{
   
   color: #007ab5;
+} 
+
+.display-1 h4{
+  padding-bottom: 2px;
+}
+
+.subhead span{
+  text-decoration:underline;
+}
+
+.subhead2{
+  color: #007ab5;
+  text-align: center;
+}
+
+.chirman-message{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+@media(max-width:500){
+  .subhead .display-1 h3{
+    font-size: 2rem;
+
+  }
+}
+
+/*++++++++++++++++End About Us Page++++++++++++++++++++++++*/
+
+.s-about.target-section h4 {
+  margin-top: 1rem;
+}
+
+.s-about.target-section h3 {
+  margin-bottom: 1em;
 }
