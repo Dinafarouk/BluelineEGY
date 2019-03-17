@@ -68,6 +68,13 @@
   }
 }
 
+@font-face {
+  font-family: 'PoiretOne';
+  /* font-style: normal;
+  font-weight: 400; */
+  src: url("./fonts/PoiretOne-Regular.ttf");
+}
+
 html, body {
   height: 100%;
 }
