@@ -1311,7 +1311,7 @@ body.menu-is-open {
   font-size: 2.5rem;
   line-height: 1.5;
   letter-spacing: -0.03rem;
-  margin-top: 70px;
+  margin-top: 50px;
   margin-bottom: 0.2rem;
   text-align: center;
 }
@@ -1324,21 +1324,19 @@ body.menu-is-open {
   text-transform: uppercase;
   letter-spacing: .25rem;
   color: #007ab5;
-  margin-top: -40px;
-  margin-bottom: 2rem;
+  margin-top: -37px;
+  margin-bottom: -1px;
   position: relative;
   text-align: center;
 }
 
-subhead span{
-
-}
 .item-title {
   font-size: 2.4rem;
   line-height: 1.5;
   margin-top: 0;
   margin-bottom: 2.4rem;
 }
+
 
 /* ------------------------------------------------------------------- 
  * ## section header
@@ -1362,6 +1360,9 @@ subhead span{
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
+}
+.section-header .coll-full h4 {
+text-align: center;
 }
 
 /* ------------------------------------------------------------------- 
@@ -2548,8 +2549,9 @@ html.no-csstransitions .home-content__main {
 }
 
 .process h4 {
-  margin-bottom: 2.1rem;
   position: relative;
+  padding-top: 23px;
+
 }
 
 .process h4::before {
@@ -3704,7 +3706,23 @@ footer a {
   }
 }
 
-                              /*++++++++++++++++About Us Page++++++++++++++++++++*/
+ /*++++++++++++++++About Us Page++++++++++++++++++++*/
+
+.subhead2{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 2.8rem;
+  line-height: 1.333;
+  text-transform: uppercase;
+  letter-spacing: .25rem;
+  color: #007ab5;
+  margin-top: -37px;
+  margin-bottom: -26px;
+  position: relative;
+  text-align: center;
+}
+
+
 .section-header.has-bottom-sep .s span{
   color: #007ab5;
 }
@@ -3719,8 +3737,9 @@ footer a {
   padding-bottom: 2px;
 }
 
-.subhead span{
+.subhead-span{
   text-decoration:underline;
+
 }
 
 .subhead2{
@@ -3742,8 +3761,12 @@ footer a {
   }
 }
 
-/*++++++++++++++++End About Us Page++++++++++++++++++++++++*/
-
+.subhead-h4{
+  padding-bottom: 0px;
+}
+.subhead-hh{
+  padding-bottom: 100px;
+}
 .s-about.target-section .value{
   font-size: 1rem;
 }
@@ -3761,11 +3784,28 @@ footer a {
     border-radius: 50%;
     object-fit: cover;
   }
-
+/* our team */
   .our-team .item-title{
     text-align: center;
     font-size: 1em;
+  
   }
+
+  .display-2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 2.5;
+    letter-spacing: -0.03rem;
+    margin-top: 50px;
+    margin-bottom: 7.2rem;
+    text-align: center;
+}
+/*++++++++++++++++End About Us Page++++++++++++++++++++++++*/
+
+
+
+  /* end our team */
 
   /* .about-page .item-folio__text{
     width: 100px;
