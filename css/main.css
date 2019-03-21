@@ -384,7 +384,7 @@ ul.disc li::before {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #793ea5;
+  background: #007ab5;
   position: absolute;
   left: -17px;
   top: 11px;
@@ -393,7 +393,7 @@ ul.disc li::before {
 
 dt {
   margin: 0;
-  color: #793ea5;
+  color: #007ab5;
 }
 
 dd {
@@ -831,7 +831,7 @@ label>input[type="checkbox"], label>input[type="radio"] {
  * ------------------------------------------------------------------- */
 
 input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus input:-webkit-autofill, textarea:-webkit-autofill, textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus, select:-webkit-autofill, select:-webkit-autofill:hover, select:-webkit-autofill:focus {
-  -webkit-text-fill-color: #793ea5;
+  -webkit-text-fill-color: #007ab5;
   transition: background-color 5000s ease-in-out 0s;
 }
 
@@ -1883,7 +1883,7 @@ text-align: center;
 }
 
 .home-content__scroll .scroll-link:hover, .home-content__scroll .scroll-link:focus {
-  color: #793ea5;
+  color: #007ab5;
 }
 
 .home-content__scroll::after {
@@ -2467,7 +2467,7 @@ html.no-csstransitions .home-content__main {
 
 .item-service__icon {
   float: left;
-  color: #793ea5;
+  color: #007ab5;
   font-size: 4.5rem;
   margin-top: -1.8rem;
 }
@@ -2639,7 +2639,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .item-folio__thumb a::after {
-  content: "...";
+  content: "";
   font-family: georgia, serif;
   font-size: 2.7rem;
   display: block;
@@ -2687,6 +2687,8 @@ html.no-csstransitions .home-content__main {
   text-transform: uppercase;
   letter-spacing: .2rem;
   margin: 0 0 .3rem 0;
+  padding-bottom: 122px;
+  
 }
 
 .item-folio__cat {
@@ -2855,7 +2857,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .clients a:hover, .clients a:focus {
-  color: #793ea5;
+  color: #007ab5;
 }
 
 .clients li {
@@ -3035,7 +3037,7 @@ html.no-csstransitions .home-content__main {
   line-height: 1.6;
   text-transform: uppercase;
   letter-spacing: .3rem;
-  color: #793ea5;
+  color: #007ab5;
 }
 
 .testimonials__author span {
