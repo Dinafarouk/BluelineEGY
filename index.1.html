@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Blueline</title>
+    <meta name="description" content="We build brands and beautiful experiences">
+    <meta name="author" content="Blueline">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        .home-content__video .video-icon,
+        .s-contact {
+            background-color: #007ab5;
+        }
+
+        .btn.btn--primary,
+        button.btn--primary,
+        input[type="submit"].btn--primary,
+        input[type="reset"].btn--primary,
+        input[type="button"].btn--primary {
+            background-color: #007ab5;
+            border-color: #007ab5;
+        }
+
+        .process h4::before {
+            background-color: #007ab5;
+        }
+
+        .subhead {
+            color: #007ab5;
+        }
+
+        section#about {
+            padding-bottom: 0;
+        }
+    </style>
+</head>
+
+
+<body id="top">
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-jump">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <nav class="header-nav">
+
+            <a href="#" class="header-nav__close" target="_blank"><span>Close</span></a>
+
+            <div class="header-nav__content">
+
+                <ul class="header-nav__list">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about_us.html" >More About Us</a></li>
+                    <li><a href="Services.html" title="works">Services</a></li>
+                    <li><a href="#contact" title="contact">Contact</a></li>
+                </ul>
+
+                <p>A quality-oriented agency that provides a variety of professional services through creative &
+                    simplesolutions.</p>
+
+                <ul class="header-nav__social">
+                    <li>
+                        <a href="#0"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0"><i class="fab fa-behance"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0"><i class="fab fa-dribbble"></i></a>
+                    </li>
+                </ul>
+
+            </div> <!-- end header-nav__content -->
+
+        </nav> <!-- end header-nav -->
+
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-icon"></span>
+        </a>
+
+    </header> <!-- end s-header -->
+
+    <!-- home ================================================== -->
+    <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="images/dd.jpeg"
+        data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+                <img src="images/logo.png" class="animated  slideInDown  delay-1s" alt="Homepage">
+
+                <h3 style="  font-family: 'PoiretOne';"> It's Diffrent in <span style="color: #007ab5;">Blue</span></h3>
+
+            </div> <!-- end  row home-content__main -->
+
+            <!-- <div class="btn-group"> -->
+            <div class="btn-group" role="group" aria-label="First group">
+                <a href="#about" class="smoothscroll btn btn--primary ">Abot Us</a>
+                <a href="#works" class="smoothscroll btn btn--primary">Our Services</a>
+                <a href="#about2" class="smoothscroll btn btn--primary">why Blueline</a>
+                <a href="#contact" class="smoothscroll btn btn--primary">Let's Talk</a>
+            </div> <!-- </div> end btn-group -->
+
+        </div><!-- end home content -->
+
+
+    </section> <!-- end s-home -->
+
+
+    <!-- about   ================================================== -->
+    <section id="about" class="s-about target-section">
+
+        <div class="row section-header bit-narrow" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Who We Are</h3>
+                <h1 class="display-1">
+
+                    Blueline is a quality-oriented agency that provides a variety of
+                    professional services through creative & simple solutions. <br />
+                    Blueline Agency contributes a wide range of
+                    marketing and media-based services. <br />
+
+                </h1>
+            </div>
+        </div>
+        <!--end about   ================================================== -->
+
+
+
+        <!-- works   ================================================== -->
+        <section id="works" class="s-works target-section">
+            <!--section-header -->
+            <div class="row section-header has-bottom-sep narrow target-section" data-aos="fade-up">
+                <div class="col-full">
+                    <h3 class="subhead">OUR SERVICES</h3>
+                    <h1 class="display-1">
+                        We take pride in what we do. Our services are designed to help your business stand out and turn
+                        your ideas into realities.
+                    </h1>
+                </div>
+            </div> <!-- end section-header -->
+
+
+
+<!-- Control buttons -->
+<div id="myBtnContainer ">
+    <button class="btn active" onclick="filterSelection('all')">All SERVICES</button>
+    <button class="btn" onclick="filterSelection('cars')">DIGITAL MARKETING</button>
+</div>
+  
+ 
+      <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+      <div class="container">
+
+  <!-- row masonry-wrap ================================================== -->
+  <div class="row masonry-wrap">
+        <div class="about-process process block-1-2 block-tab-full">
+
+            <div class="col-block item-process" data-aos="fade-up">
+                <div class="item-process__text">
+                  
+
+                    <!-- masonry__brick 1 -->
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+                            <div class="item-folio__thumb">
+                                <a href="images/serveses/DIGITAL MARKETING.jpeg" class="thumb-link" title="Shutterbug"
+                                    data-size="1050x700">
+                                    <img src="images/serveses/DIGITAL MARKETING.jpeg"
+                                        srcset="images/serveses/DIGITAL MARKETING.jpeg 1x, images/serveses/DIGITAL MARKETING.jpeg 2x" alt="">
+                                </a>
+                            </div>
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                   <a style="color: #FFFFFF;"
+                                
+                                    href="Services.html"> DIGITAL MARKETING</a>
+                                </h3>
+                            </div>
+                          
+                            <div class="item-folio__caption">
+                                <p>
+                                    From researching how people behave on social to creating content that’ll
+                                    entice them. Our digital marketing department is a tech savvy, fast paced
+                                    team waiting for your likes and reach to increase by the minute. We handle
+                                    the creative and also the back end details of SEO, QR codes and web & mobile
+                                    app development.
+                                </p>
+                               
+                            </div>
+                        </div>
+                    </div> <!-- end masonry__brick1 -->
+
+                </div>
+            </div>
+
+
+            <div class="col-block item-process" data-aos="fade-up">
+                <div class="item-process__text">
+                
+                    <!-- masonry__brick 2 -->
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+
+                            <div class="item-folio__thumb">
+                                <a href="images/serveses/event.jpeg" class="thumb-link" title="Woodcraft"
+                                    data-size="1050x700">
+                                    <img src="images/serveses/event.jpeg"
+                                        srcset="images/serveses/event.jpeg 1x, images/serveses/event.jpeg 2x" alt="">
+                                </a>
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    PR/EVENTS MANAGEMENT
+                                </h3>
+                            </div>
+
+                            <div class="item-folio__caption">
+                                <p>
+                                    All brands need a platform to speak on. Sometimes, those conversations need
+                                    to happen face to face.<br>
+                                    Our PR and Events management department handle all on ground activations and
+                                    events that fit into your business plan to eﬃciently communicate and present
+                                    your work. <br>
+                                    We make sure your brand says hello to its target audience the right way.
+                                    <br>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div> <!-- end masonry__brick 2-->
+
+
+                </div>
+            </div>
+
+            <div class="col-block item-process" data-aos="fade-up">
+                <div class="item-process__text">
+                  
+                    <!-- masonry__brick 3 -->
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+
+                            <div class="item-folio__thumb">
+                                <a href="images/serveses/training.jpeg" class="thumb-link" title="The Beetle Car"
+                                    data-size="1050x700">
+                                    <img src="images/serveses/training.jpeg"
+                                        srcset="images/serveses/training.jpeg 1x, images/serveses/training.jpeg 2x" alt="">
+                                </a>
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    TRAINING
+                                </h3>
+                            </div>
+
+                            <div class="item-folio__caption">
+                                <p>Blueline provides up-to-date technical trainings in various fields to
+                                    strengthen potential trainees to reach their maximum expertise.</p>
+                            </div>
+
+                        </div>
+                    </div> <!-- end masonry__brick 3 -->
+
+
+
+                </div>
+            </div>
+
+            <div class="col-block item-process" data-aos="fade-up">
+                <div class="item-process__text">
+                 
+
+                    <!--  masonry__brick 4 -->
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+
+                            <div class="item-folio__thumb">
+                                <a href="images/serveses/Advertising.jpeg" class="thumb-link" title="Grow Green"
+                                    data-size="1050x700">
+                                    <img src="images/serveses/Advertising.jpeg"
+                                        srcset="images/serveses/Advertising.jpeg 1x, images/serveses/Advertising.jpeg 2x" alt="">
+                                </a>
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    ADVERTISING
+                                </h3>
+                            </div>
+
+                            <div class="item-folio__caption">
+                                <p>Our advertising department specializes in showcasing your brand wherever your
+                                    target audience go.<br>
+                                    Through ATL and BTL campaigns, we enhance your campaigns and messages
+                                    through all mediums integrated at the right touchpoints.</p>
+                            </div>
+
+                        </div>
+                    </div> <!-- end masonry__brick 4 -->
+
+
+                </div>
+            </div>
+
+
+            <div class="col-block item-process" data-aos="fade-up">
+                <div class="item-process__text">
+                  
+
+                    <!-- masonry__brick 5 -->
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+
+                            <div class="item-folio__thumb">
+                                <a href="images/serveses/media buying.jpeg" class="thumb-link" title="Guitarist"
+                                    data-size="1050x700">
+                                    <img src="images/serveses/media buying.jpeg"
+                                        srcset="images/serveses/media buying.jpeg 1x, images/serveses/media buying.jpeg 2x" alt="">
+                                </a>
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    MEDIA BUYING
+                                </h3>
+                            </div>
+
+                            <div class="item-folio__caption">
+                                <p>Putting your work at the right spots, boosting and sponsoring them in the
+                                    right areas. <br>
+                                    Our media buying department focuses on creating content that’ll situate
+                                    itself optimally in the right mediums whether it be TV, radio or social
+                                    media.</p>
+                            </div>
+
+                        </div>
+                    </div> <!-- end masonry__brick 5-->
+
+
+                    
+                </div>
+            </div>
+
+
+            <div class="col-block item-process" data-aos="fade-up">
+                <div class="item-process__text">
+                  
+
+                    <!-- masonry__brick 1 -->
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+                            <div class="item-folio__thumb">
+                                <a href="images/serveses/B2B.jpeg" class="thumb-link" title="Shutterbug"
+                                    data-size="1050x700">
+                                    <img src="images/serveses/B2B.jpeg"
+                                        srcset="images/serveses/B2B.jpeg 1x, images/serveses/B2B.jpeg 2x" alt="">
+                                </a>
+                            </div>
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    B2B (BUSINESS TO BUSINESS)
+                                </h3>
+                            </div>
+                          
+                            <div class="item-folio__caption">
+                                <p>
+                                    From researching how people behave on social to creating content that’ll
+                                    entice them. Our digital marketing department is a tech savvy, fast paced
+                                    team waiting for your likes and reach to increase by the minute. We handle
+                                    the creative and also the back end details of SEO, QR codes and web & mobile
+                                    app development.
+                                </p>
+                                <p>
+                                    -SEO (SEARCH ENGINE OPTIMIZATION)<br />
+                                    -SOCIAL MEDIA MANAGEMENT AND MODERATION<br />
+                                    -RESEARCH AND INSIGHT DEVELOPMENT<br />
+                                    -DIGITAL CAMPAIGNS (CONTENT CREATION & STRATEGY)<br />
+                                    -DESIGN, MEDIA DESIGN AND BRANDING
+                                    -BRAND STRATEGIES<br />
+                                    -WEB & MOBILE APP DEVELOPMENT<br />
+                                    -QR CODE CAMPAIGNS<br />
+                                </p>
+                            </div>
+                        </div>
+                    </div> <!-- end masonry__brick1 -->
+
+                </div>
+            </div>
+
+            
+
+        </div> <!-- end process -->
+    </div> <!-- end row masonry-wrap -->
+
+
+
+
+
+
+
+
+            <!-- row masonry-wrap ================================================== -->
+            <div class="row masonry-wrap">
+                    <div class="about-process process block-1-2 block-tab-full">
+    
+                 <!-- col-block item-process 1 ================================================== -->
+                        <div class="col-block item-process" data-aos="fade-up">
+                            <div class="item-process__text">
+                             
+                                <!-- masonry__brick 1  SEO (SEARCH ENGINE OPTIMIZATION) -->
+                                <div class="masonry__brick" data-aos="fade-up">
+                                    <div class="item-folio">
+                                        <div class="item-folio__thumb">
+                                            <a href="images/serveses/DIGITAL MARKETING.jpeg" class="thumb-link" title="Shutterbug"
+                                                data-size="1050x700">
+                                                <img src="images/serveses/DIGITAL MARKETING.jpeg"
+                                                    srcset="images/slide3.jpg 1x, images/slide3.jpg 2x" alt="">
+                                            </a>
+                                        </div>
+                                       
+                                        <div class="item-folio__caption">
+    
+                                                <h4 style=" color: #007ab5 "> &quot;Instead of finding the customers yourself, let the customers find you&quot; </h4> 
+                                               <p>
+                                                Most of your customers used search engines like Google, Yahoo and Bing to find what they&#39;re
+                                                looking for. Search engine optimization (SEO) is a process that improves a websites quality
+                                                of traffic and the visibility of your site through search engines like Google, putting you in front
+                                                of your target audience. It&#39;s an effective &amp; important tool of any digital marketing strategy to
+                                                building and maintaining your company’s online presence.<br/> <br/>
+                                                Our SEO Services are intended to set you apart from the noise and promotes your business to
+                                                those who are looking for it, at a time when they&#39;re most likely to engage. SEO is much more
+                                                than simple optimization. It’s about build a truly optimized website that is user-friendly,
+                                                structured and designed for your visitors. This boosts the amount of time that they stay on your
+                                                website until they finally contact your business since it’s what they were trying to find. SEO
+                                                isn’t a channel in its own; it should be integrated with many other channels for sustainable
+                                                long-term ROI.<br/><br/>
+                                                Our team of experts has access to some of the most advanced tools in SEO field and keep
+                                                themselves updated with the current best practices of SEO and work accordingly. Hence, we
+                                                can create great SEO strategy to our clients&#39; that match their business goals and their digital
+                                                strategy, which means more conversions, more traffic leads and more sales.    
+                                               </p>
+                                            
+                                        </div><!-- end item-folio__caption --> 
+                                    </div><!-- end item-folio --> 
+                                </div> <!-- end masonry__brick1 SEO (SEARCH ENGINE OPTIMIZATION)  -->
+                            </div><!-- end item-process__text -->
+                        </div><!--end col-block item-process 1 ================================================== -->
+    
+    
+                     <!-- col-block item-process 2 ================================================== -->
+                        <div class="col-block item-process" data-aos="fade-up">
+                            <div class="item-process__text">
+                          
+                                <!-- masonry__brick 2 SOCIAL MEDIA MANAGEMENT AND MODERATION-->
+                                <div class="masonry__brick" data-aos="fade-up">
+                                    <div class="item-folio">
+    
+                                        <div class="item-folio__thumb">
+                                            <a href="images/serveses/socialmedia.jpeg" class="thumb-link" title="Woodcraft"
+                                                data-size="1050x700">
+                                                <img src="images/serveses/socialmedia.jpeg"
+                                                    srcset="images/serveses/socialmedia.jpeg 1x, images/serveses/socialmedia.jpeg 2x" alt="">
+                                            </a>
+                                        </div>
+    
+                                      
+    
+                                        <div class="item-folio__caption"> 
+    
+                                            <h4 style=" color: #007ab5 ">“We are your partners in success”</h4>
+                                       
+                                              
+                                               <p>
+                                                    Today social media is changing the way businesses are marketing their products &amp; services
+                                                    this is due to the large number of highly targeted online users on social media platforms.
+                                                    We understand that social media is a continually growing field and in order to benefit as much
+                                                    as possible from it, you should tap into its power to increase your brand visibility, sales, and
+                                                    user engagement as well as brand loyalty.<br/><br/>
+                                                    
+                                                    Good social media management basically means developing and maintaining better
+                                                    long-term relationships with your target audience, and it’s crucial for the growth of your
+                                                    business and enjoys better ROIs. Managing your business&#39; community on social media is
+                                                    an important but highly-rewarding activity to execute correctly.<br/><br/>
+                                                    
+                                                    We Offers complete social media management; we can take completely off your hands
+                                                    or work with your brand manager to integrate social media optimization
+                                                    with overall social media marketing activities for maximum outcome, create
+                                                    the right strategy for your target audience, and custom content to keep your audience
+                                                    engaged and loyal to your brand. With full transparency and in-depth reporting,
+                                                    you can be sure to be on top of your progress and results.<br/><br/>
+                                                    
+                                                    Work with Blueline for complete social media strategy, better goal achievement,
+                                                    team of specialists keep up-to-date with the latest social trends &amp; developments, and
+                                                    quick service for successful online presence that actually takes you forward.
+                                              
+                                               </p>
+    
+                                        </div><!-- end item-folio__caption 2-->
+                                    </div> <!-- end item-folio 2-->
+                                </div> <!-- end masonry__brick 2-->
+                            </div><!-- end item-process__text 2--> 
+                      </div><!--end col-block item-process 2 ================================================== -->
+    
+    
+                    <!-- col-block item-process 3 ================================================== -->
+                        <div class="col-block item-process" data-aos="fade-up">
+                            <div class="item-process__text">
+                    
+                                <!-- masonry__brick 3 -->
+                                <div class="masonry__brick" data-aos="fade-up">
+                                    <div class="item-folio">
+    
+                                        <div class="item-folio__thumb">
+                                            <a href="images/slide4.jpeg" class="thumb-link" title="The Beetle Car"
+                                                data-size="1050x700">
+                                                <img src="images/slide4.jpeg"
+                                                    srcset="images/slide4.jpeg 1x, images/slide4.jpeg 2x" alt="">
+                                            </a>
+                                        </div>
+    
+                                      
+    
+                                        <div class="item-folio__caption">
+                                            <p>At Blueline’ Research &amp; Insights, We are aware that customers&#39; decisions and behavior
+                                                    have a major impact on your company&#39;s success. We provide fast-track results and quality
+                                                    standards for research and insights that help you to take quick and informed decisions.
+                                                    
+                                                    Our goal is to ensure a better return on your marketing and product investments.
+                                                    We collaborate closely with clients to plan and perform digital exploratory research on
+                                                    multiple channels to gain actionable insights into your target market and enhance your
+                                                    offering to deliver a competitive edge.
+                                                    
+                                                    Our work produces reviews, reports and strategic recommendations, as well as technology-
+                                                    enabled research and insights development solutions. We conduct research and advanced
+                                                    analytics, and break down data complexity that help our clients to take a quick decision
+                                                    based on a deep behavioral perspectives. Also, our solutions offer value-added insights and
+                                                    enable our clients to digitize and automate decisions and operations. The data collected may
+                                                    also be used not just for the development of ideas and feasibility research but also for later
+                                                    stages like the planning of marketing campaigns and the digital strategy in general.</p>
+                                        </div>
+    
+                                    </div><!-- end item-folio 3 -->
+                                </div> <!-- end masonry__brick 3 -->
+                            </div><!-- end item-process__text 3 -->
+                        </div> <!--end col-block item-process 3 ================================================== -->
+    
+    
+                       <!-- col-block item-process 4 ================================================== -->
+                        <div class="col-block item-process" data-aos="fade-up">
+                            <div class="item-process__text">
+                             
+                                <!--  masonry__brick 4 -->
+                                <div class="masonry__brick" data-aos="fade-up">
+                                    <div class="item-folio">
+    
+                                        <div class="item-folio__thumb">
+                                            <a href="images/slide5.jpeg" class="thumb-link" title="Grow Green"
+                                                data-size="1050x700">
+                                                <img src="images/slide5.jpeg"
+                                                    srcset="images/slide5.jpeg 1x, images/slide5.jpeg 2x" alt="">
+                                            </a>
+                                        </div>
+    
+    
+                                        <div class="item-folio__caption">
+                                             <p>Building campaigns in today&#39;s constantly changing digital marketing environment, which really
+                                                    need to understand the unique opportunities available on major digital and social platforms.
+                                                    As a full digital marketing agency, we actually know our playground and the regional market
+                                                    environment in general very well. Our team of creatives, copywriters, analysts, content creators
+                                                    and digital strategists understand these opportunities to strategize, develop and manage
+                                                    campaigns that ultimately deliver desired results.</p>
+                                        </div>
+    
+                                    </div>
+                                </div> <!-- end masonry__brick 4 -->
+    
+    
+                            </div>
+                        </div> <!-- end col-block item-process 4 ================================================== -->
+    
+                
+    
+                      <!-- col-block item-process 6 ================================================== -->
+                        <div class="col-block item-process" data-aos="fade-up">
+                            <div class="item-process__text">
+                               
+                                <!-- masonry__brick 6 -->
+                                <div class="masonry__brick" data-aos="fade-up">
+                                    <div class="item-folio">
+    
+                                        <div class="item-folio__thumb">
+                                            <a href="images/serveses/branddesign.jpeg" class="thumb-link" title="Woodcraft"
+                                                data-size="1050x700">
+                                                <img src="images/serveses/branddesign.jpeg"
+                                                    srcset="images/serveses/branddesign.jpeg 1x, images/serveses/branddesign.jpeg 2x" alt="">
+                                            </a>
+                                        </div>
+    
+                                     
+    
+                                        <div class="item-folio__caption">
+                                            <p>
+                                                Branding and design are two concepts that combine to tell a brand&#39;s esthetic story.
+                                                We are dependent on two&#39;s seamless integration to build brands which tell even better stories.
+                                                We believe that brands must create an interactive and emotional relationship with people and
+                                                take your company&#39;s unique stories and values and make them a brand that really and
+                                                authentically speaks with users. A brand with which people can connect is always a successful
+                                                brand. We are inspired by fresh, innovative, and artistic designs. <br/>
+                                                
+                                                Bluline’ creates a successful corporate identity design that contributes positively to the entire
+                                                company&#39;s success by providing instant credibility and recognition for their company&#39;s brand
+                                                name.
+                                                <br>
+                                            </p>
+                                        </div>
+    
+                                    </div><!-- end item-folio 6-->
+                                </div> <!-- end masonry__brick 6-->
+                            </div><!-- end item-process__text 6-->
+                        </div> <!--end col-block item-process 6 ================================================== -->
+                        
+                      
+                         <!-- col-block item-process 7 ================================================== -->
+                        <div class="col-block item-process" data-aos="fade-up">
+                            <div class="item-process__text">
+                               
+    
+                                <!-- masonry__brick 2 -->
+                                <div class="masonry__brick" data-aos="fade-up">
+                                    <div class="item-folio">
+    
+                                        <div class="item-folio__thumb">
+                                            <a href="images/serveses/mobile.jpeg" class="thumb-link" title="Woodcraft"
+                                                data-size="1050x700">
+                                                <img src="images/serveses/mobile.jpeg"
+                                                    srcset="images/serveses/mobile.jpeg 1x, images/serveses/mobile.jpeg 2x" alt="">
+                                            </a>
+                                        </div>
+    
+                                    
+    
+                                        <div class="item-folio__caption">
+                                                    
+                                                  
+                                                    Have an online project you’re struggling to develop? Not to worry, our developers have the
+                                                    expertise to make your custom project a reality. We are following the latest development
+                                                    techniques and we understand the different contexts of the markets, commercial imperatives to
+                                                    achieve unique, functional web solutions. By positioning user experience strongly at the
+                                                    forefront, we blend design, front-end optimization, and back-end development to create well
+                                                    integrated, personalized websites that meet the exact needs of our clients. With our expertise in
+                                                    software development, we will develop the most compatible website for positive communication,
+                                                    all of which extend from simple blogs to social media platforms.
+                                                    Having the expertise in all digital development techniques, besides our gained
+                                                    experience, Blueline’ web design &amp; development team specialize in the development of
+                                                    websites such as e-commerce website, which include several features that help clients to
+                                                    manage their websites and generate reports without any previous experience.
+                                                   </p>
+                                        </div>
+    
+                                    </div>
+                                </div> <!-- end masonry__brick 2-->
+    
+    
+                            </div>
+                        </div><!--end col-block item-process 7 ================================================== -->
+    
+                        <div class="col-block item-process" data-aos="fade-up">
+                                <div class="item-process__text">
+                              
+                                    <!-- masonry__brick 2 -->
+                                    <div class="masonry__brick" data-aos="fade-up">
+                                        <div class="item-folio">
+        
+                                            <div class="item-folio__thumb">
+                                                <a href="images/serveses/web.jpeg" class="thumb-link" title="Woodcraft"
+                                                    data-size="1050x700">
+                                                    <img src="images/serveses/web.jpeg"
+                                                        srcset="images/serveses/web.jpeg 1x, images/serveses/web.jpeg 2x" alt="">
+                                                </a>
+                                            </div>
+        
+        
+                                            <div class="item-folio__caption">
+                                                        
+                                                     
+                                                        Your website serves the first impression of your new visitors, so if you don’t give them a reason
+                                                        to stay within the first few seconds, you could lose them. We work to center your website
+                                                        design around the customer’s experience, and track their behavior to produce new customers
+                                                        and transform visitors into customers. With our unique designs and custom development - we
+                                                        provide a full range of website design and development services from blogs to social media
+                                                        platforms to e-commerce websites. Our full service design team is ready for the challenge to
+                                                        ensure that your website is innovative, easy to use on all devices, has a professional engaging
+                                                        content, and is displayed by trendy technologies. We specialize in building eye-catching,
+                                                        innovative designs that perfectly balance user experience with superior innovation.
+                                                        </p>
+        
+                                                    
+                                                       
+                                            </div>
+        
+                                        </div>
+                                    </div> <!-- end masonry__brick 2-->
+        
+        
+                                </div>
+                            </div>
+        
+                            <div class="col-block item-process" data-aos="fade-up">
+                                    <div class="item-process__text">
+                                     
+                                        <!-- masonry__brick 2 -->
+                                        <div class="masonry__brick" data-aos="fade-up">
+                                            <div class="item-folio">
+            
+                                                <div class="item-folio__thumb">
+                                                    <a href="images/serveses/QR.jpeg" class="thumb-link" title="Woodcraft"
+                                                        data-size="1050x700">
+                                                        <img src="images/serveses/QR.jpeg"
+                                                            srcset="images/serveses/QR.jpeg 1x, images/serveses/QR.jpeg 2x" alt="">
+                                                    </a>
+                                                </div>
+            
+            
+                                                <div class="item-folio__caption">
+            
+                                                    <h4 style=" color: #007ab5 "> “Engage instead of proclaim” <h4></h4>
+                                                             <p> 
+                                                        For those who are unaware of QR campaigns, &quot;Quickly Response&quot; code is a type of 2D bar
+                                                        code or digital image that can be easily scanned by mobile device’s camera “Smartphones”.
+                                                        Once targeted audience scanned, it will guide potential new users and loyal customers to a
+                                                        website, social media accounts, promo page, contact details, and so on. <br/>
+                                                        
+                                                        <br/> Blueline’ provides companies in unique marketing solutions that combine design and technology.
+                                                        We design and develop a unique, creative QR marketing campaign by providing a seamless
+                                                        connection from your ads to your digital marketing campaign, to encourage the target audience
+                                                        to interact with a campaign and grow the reach of the campaign through interaction with a
+                                                        brand’s digital platforms and mobile presence in order to deliver a more engaging customer
+                                                        experience with useful analytics.
+                                                       <br>
+                                                    </p>
+                                                </div>
+            
+                                            </div>
+                                        </div> <!-- end masonry__brick 2-->
+            
+            
+                                    </div>
+                                </div>
+                    </div> <!-- end process -->
+    
+                </div> <!-- end row masonry-wrap ================================================== -->
+    
+    
+
+
+
+        </div>
+
+
+
+
+
+
+            <!-- row masonry-wrap ================================================== -->
+            <div class="row masonry-wrap">
+                <div class="about-process process block-1-2 block-tab-full">
+
+                    <div class="col-block item-process" data-aos="fade-up">
+                        <div class="item-process__text">
+                          
+
+                            <!-- masonry__brick 1 -->
+                            <div class="masonry__brick" data-aos="fade-up">
+                                <div class="item-folio">
+                                    <div class="item-folio__thumb">
+                                        <a href="images/serveses/DIGITAL MARKETING.jpeg" class="thumb-link" title="Shutterbug"
+                                            data-size="1050x700">
+                                            <img src="images/serveses/DIGITAL MARKETING.jpeg"
+                                                srcset="images/serveses/DIGITAL MARKETING.jpeg 1x, images/serveses/DIGITAL MARKETING.jpeg 2x" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="item-folio__text">
+                                        <h3 class="item-folio__title">
+                                           <a style="color: #FFFFFF;"
+                                        
+                                            href="Services.html"> DIGITAL MARKETING</a>
+                                        </h3>
+                                    </div>
+                                  
+                                    <div class="item-folio__caption">
+                                        <p>
+                                            From researching how people behave on social to creating content that’ll
+                                            entice them. Our digital marketing department is a tech savvy, fast paced
+                                            team waiting for your likes and reach to increase by the minute. We handle
+                                            the creative and also the back end details of SEO, QR codes and web & mobile
+                                            app development.
+                                        </p>
+                                       
+                                    </div>
+                                </div>
+                            </div> <!-- end masonry__brick1 -->
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-block item-process" data-aos="fade-up">
+                        <div class="item-process__text">
+                        
+                            <!-- masonry__brick 2 -->
+                            <div class="masonry__brick" data-aos="fade-up">
+                                <div class="item-folio">
+
+                                    <div class="item-folio__thumb">
+                                        <a href="images/serveses/event.jpeg" class="thumb-link" title="Woodcraft"
+                                            data-size="1050x700">
+                                            <img src="images/serveses/event.jpeg"
+                                                srcset="images/serveses/event.jpeg 1x, images/serveses/event.jpeg 2x" alt="">
+                                        </a>
+                                    </div>
+
+                                    <div class="item-folio__text">
+                                        <h3 class="item-folio__title">
+                                            PR/EVENTS MANAGEMENT
+                                        </h3>
+                                    </div>
+
+                                    <div class="item-folio__caption">
+                                        <p>
+                                            All brands need a platform to speak on. Sometimes, those conversations need
+                                            to happen face to face.<br>
+                                            Our PR and Events management department handle all on ground activations and
+                                            events that fit into your business plan to eﬃciently communicate and present
+                                            your work. <br>
+                                            We make sure your brand says hello to its target audience the right way.
+                                            <br>
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div> <!-- end masonry__brick 2-->
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-block item-process" data-aos="fade-up">
+                        <div class="item-process__text">
+                          
+                            <!-- masonry__brick 3 -->
+                            <div class="masonry__brick" data-aos="fade-up">
+                                <div class="item-folio">
+
+                                    <div class="item-folio__thumb">
+                                        <a href="images/serveses/training.jpeg" class="thumb-link" title="The Beetle Car"
+                                            data-size="1050x700">
+                                            <img src="images/serveses/training.jpeg"
+                                                srcset="images/serveses/training.jpeg 1x, images/serveses/training.jpeg 2x" alt="">
+                                        </a>
+                                    </div>
+
+                                    <div class="item-folio__text">
+                                        <h3 class="item-folio__title">
+                                            TRAINING
+                                        </h3>
+                                    </div>
+
+                                    <div class="item-folio__caption">
+                                        <p>Blueline provides up-to-date technical trainings in various fields to
+                                            strengthen potential trainees to reach their maximum expertise.</p>
+                                    </div>
+
+                                </div>
+                            </div> <!-- end masonry__brick 3 -->
+
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-block item-process" data-aos="fade-up">
+                        <div class="item-process__text">
+                         
+
+                            <!--  masonry__brick 4 -->
+                            <div class="masonry__brick" data-aos="fade-up">
+                                <div class="item-folio">
+
+                                    <div class="item-folio__thumb">
+                                        <a href="images/serveses/Advertising.jpeg" class="thumb-link" title="Grow Green"
+                                            data-size="1050x700">
+                                            <img src="images/serveses/Advertising.jpeg"
+                                                srcset="images/serveses/Advertising.jpeg 1x, images/serveses/Advertising.jpeg 2x" alt="">
+                                        </a>
+                                    </div>
+
+                                    <div class="item-folio__text">
+                                        <h3 class="item-folio__title">
+                                            ADVERTISING
+                                        </h3>
+                                    </div>
+
+                                    <div class="item-folio__caption">
+                                        <p>Our advertising department specializes in showcasing your brand wherever your
+                                            target audience go.<br>
+                                            Through ATL and BTL campaigns, we enhance your campaigns and messages
+                                            through all mediums integrated at the right touchpoints.</p>
+                                    </div>
+
+                                </div>
+                            </div> <!-- end masonry__brick 4 -->
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-block item-process" data-aos="fade-up">
+                        <div class="item-process__text">
+                          
+
+                            <!-- masonry__brick 5 -->
+                            <div class="masonry__brick" data-aos="fade-up">
+                                <div class="item-folio">
+
+                                    <div class="item-folio__thumb">
+                                        <a href="images/serveses/media buying.jpeg" class="thumb-link" title="Guitarist"
+                                            data-size="1050x700">
+                                            <img src="images/serveses/media buying.jpeg"
+                                                srcset="images/serveses/media buying.jpeg 1x, images/serveses/media buying.jpeg 2x" alt="">
+                                        </a>
+                                    </div>
+
+                                    <div class="item-folio__text">
+                                        <h3 class="item-folio__title">
+                                            MEDIA BUYING
+                                        </h3>
+                                    </div>
+
+                                    <div class="item-folio__caption">
+                                        <p>Putting your work at the right spots, boosting and sponsoring them in the
+                                            right areas. <br>
+                                            Our media buying department focuses on creating content that’ll situate
+                                            itself optimally in the right mediums whether it be TV, radio or social
+                                            media.</p>
+                                    </div>
+
+                                </div>
+                            </div> <!-- end masonry__brick 5-->
+
+
+                            
+                        </div>
+                    </div>
+
+
+                    <div class="col-block item-process" data-aos="fade-up">
+                        <div class="item-process__text">
+                          
+
+                            <!-- masonry__brick 1 -->
+                            <div class="masonry__brick" data-aos="fade-up">
+                                <div class="item-folio">
+                                    <div class="item-folio__thumb">
+                                        <a href="images/serveses/B2B.jpeg" class="thumb-link" title="Shutterbug"
+                                            data-size="1050x700">
+                                            <img src="images/serveses/B2B.jpeg"
+                                                srcset="images/serveses/B2B.jpeg 1x, images/serveses/B2B.jpeg 2x" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="item-folio__text">
+                                        <h3 class="item-folio__title">
+                                            B2B (BUSINESS TO BUSINESS)
+                                        </h3>
+                                    </div>
+                                  
+                                    <div class="item-folio__caption">
+                                        <p>
+                                            From researching how people behave on social to creating content that’ll
+                                            entice them. Our digital marketing department is a tech savvy, fast paced
+                                            team waiting for your likes and reach to increase by the minute. We handle
+                                            the creative and also the back end details of SEO, QR codes and web & mobile
+                                            app development.
+                                        </p>
+                                        <p>
+                                            -SEO (SEARCH ENGINE OPTIMIZATION)<br />
+                                            -SOCIAL MEDIA MANAGEMENT AND MODERATION<br />
+                                            -RESEARCH AND INSIGHT DEVELOPMENT<br />
+                                            -DIGITAL CAMPAIGNS (CONTENT CREATION & STRATEGY)<br />
+                                            -DESIGN, MEDIA DESIGN AND BRANDING
+                                            -BRAND STRATEGIES<br />
+                                            -WEB & MOBILE APP DEVELOPMENT<br />
+                                            -QR CODE CAMPAIGNS<br />
+                                        </p>
+                                    </div>
+                                </div>
+                            </div> <!-- end masonry__brick1 -->
+
+                        </div>
+                    </div>
+
+                    
+
+                </div> <!-- end process -->
+            </div> <!-- end row masonry-wrap -->
+
+
+
+            <!-- More about   ================================================== -->
+            <section id="about2" class="s-about target-section">
+
+                <div class="row section-header bit-narrow" data-aos="fade-up">
+                    <div class="col-full">
+                        <h3 class="subhead">WHY CHOOSE BLUELINE</h3>
+                        <h1 class="display-1">
+                            Blueline plans on giving you a fulfilling professional experience using
+                            unique approaches & convenient out-the-box results by innovative staﬀ
+                            driven to satisfy all the client’s needs.
+                            <br />
+                        </h1>
+                    </div>
+                </div> <!-- end section-header -->
+
+            </section> <!-- end s-about -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- contact================================================== -->
+
+            <section id="contact" class="bl-contact">
+                    <div class="contact-info">
+                        <h3>Pay us a visit </h3>
+                        <p class="contact-address">
+                            246, st. no. 35<br />
+                            5th District,
+                            5th Settlement<br />
+                            New Cairo<br />
+                        </p>
+                        <p class="contact-numbers">
+                            (+2) 022-560-61-46 &nbsp; (+2) 011-013-157-77
+                        </p>
+                        <p class="contact-email">
+                            <a href="mailto:#0">info@bluelineegypt.com</a>
+                        </p>
+                        <ul class="contact-social">
+                            <li>
+                                <a href="#0"><i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#0"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#0"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#0"><i class="fab fa-behance"></i></a>
+                            </li>
+                            <li>
+                                <a href="#0"><i class="fab fa-dribbble"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contact-map">
+                        <div id="map">Map</div>
+                    </div>
+                </section> <!-- end s-contact -->
+
+            <!-- foot   der
+    ================================================== -->
+            <footer>
+                <div class="row">
+                    <div class="col-full ss-copyright">
+                        <span>© Copyright Blueline 2019</span>
+                    </div>
+                </div>
+
+                <div class="ss-go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top">Back to Top</a>
+                </div>
+            </footer>
+
+
+            <!-- photoswipe background
+    ================================================== -->
+            <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+                <div class="pswp__bg"></div>
+                <div class="pswp__scroll-wrap">
+
+                    <div class="pswp__container">
+                        <div class="pswp__item"></div>
+                        <div class="pswp__item"></div>
+                        <div class="pswp__item"></div>
+                    </div>
+
+                    <div class="pswp__ui pswp__ui--hidden">
+                        <div class="pswp__top-bar">
+                            <div class="pswp__counter"></div><button class="pswp__button pswp__button--close"
+                                title="Close (Esc)"></button> <button class="pswp__button pswp__button--share"
+                                title="Share"></button> <button class="pswp__button pswp__button--fs"
+                                title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom"
+                                title="Zoom in/out"></button>
+                            <div class="pswp__preloader">
+                                <div class="pswp__preloader__icn">
+                                    <div class="pswp__preloader__cut">
+                                        <div class="pswp__preloader__donut"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                            <div class="pswp__share-tooltip"></div>
+                        </div><button class="pswp__button pswp__button--arrow--left"
+                            title="Previous (arrow left)"></button>
+                        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                        <div class="pswp__caption">
+                            <div class="pswp__caption__center"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div> <!-- end photoSwipe background -->
+
+
+            <!-- Java Script
+    ================================================== -->
+            <script src="js/jquery-3.2.1.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/plugins.js"></script>
+            <script src="https://maps.google.com/maps/api/js?sensor=true"></script>
+            <script src="https://maps.google.com/maps/api/js?sensor=true"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.9/gmaps.min.js"></script>
+            <script src="js/main.js"></script>
+</body>
