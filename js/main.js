@@ -3,16 +3,16 @@
  *
  * ------------------------------------------------------------------- */
 
-(function($) {
+(function ($) {
 
     "use strict";
-    
+
     var cfg = {
-        scrollDuration : 800, // smoothscroll duration
-        mailChimpURL   : 'https://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e6957d85dc'   // mailchimp url
+        scrollDuration: 800, // smoothscroll duration
+        mailChimpURL: 'https://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e6957d85dc'   // mailchimp url
     },
 
-    $WIN = $(window);
+        $WIN = $(window);
 
     // Add the User Agent to the <html>
     // will be used for IE10 detection (Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0))
@@ -25,38 +25,38 @@
     }
 
 
-   /* Preloader
-    * -------------------------------------------------- */
-    var ssPreloader = function() {
-        
+    /* Preloader
+     * -------------------------------------------------- */
+    var ssPreloader = function () {
+
         $("html").addClass('ss-preload');
 
-        $WIN.on('load', function() {
+        $WIN.on('load', function () {
 
             //force page scroll position to top at page refresh
             $('html, body').animate({ scrollTop: 0 }, 'normal');
 
             // will first fade out the loading animation 
-            $("#loader").fadeOut("slow", function() {
+            $("#loader").fadeOut("slow", function () {
                 // will fade out the whole DIV that covers the website.
                 $("#preloader").delay(300).fadeOut("slow");
-            }); 
-            
+            });
+
             // for hero content animations 
             $("html").removeClass('ss-preload');
             $("html").addClass('ss-loaded');
-        
+
         });
     };
 
 
-   /* Menu on Scrolldown
-    * ------------------------------------------------------ */
-    var ssMenuOnScrolldown = function() {
-        
+    /* Menu on Scrolldown
+     * ------------------------------------------------------ */
+    var ssMenuOnScrolldown = function () {
+
         var menuTrigger = $('.header-menu-toggle');
 
-        $WIN.on('scroll', function() {
+        $WIN.on('scroll', function () {
 
             if ($WIN.scrollTop() > 150) {
                 menuTrigger.addClass('opaque');
@@ -69,31 +69,31 @@
     };
 
 
-   /* OffCanvas Menu
-    * ------------------------------------------------------ */
-    var ssOffCanvas = function() {
+    /* OffCanvas Menu
+     * ------------------------------------------------------ */
+    var ssOffCanvas = function () {
 
-        var menuTrigger     = $('.header-menu-toggle'),
-            nav             = $('.header-nav'),
-            closeButton     = nav.find('.header-nav__close'),
-            siteBody        = $('body'),
-            mainContents    = $('section, footer');
+        var menuTrigger = $('.header-menu-toggle'),
+            nav = $('.header-nav'),
+            closeButton = nav.find('.header-nav__close'),
+            siteBody = $('body'),
+            mainContents = $('section, footer');
 
         // open-close menu by clicking on the menu icon
-        menuTrigger.on('click', function(e){
+        menuTrigger.on('click', function (e) {
             e.preventDefault();
             siteBody.toggleClass('menu-is-open');
         });
 
         // close menu by clicking the close button
-        closeButton.on('click', function(e){
+        closeButton.on('click', function (e) {
             e.preventDefault();
             menuTrigger.trigger('click');
         });
 
         // close menu clicking outside the menu itself
-        siteBody.on('click', function(e){
-            if( !$(e.target).is('.header-nav, .header-nav__content, .header-menu-toggle, .header-menu-toggle span') ) {
+        siteBody.on('click', function (e) {
+            if (!$(e.target).is('.header-nav, .header-nav__content, .header-menu-toggle, .header-menu-toggle span')) {
                 siteBody.removeClass('menu-is-open');
             }
         });
@@ -101,10 +101,10 @@
     };
 
 
-   /* Masonry
-    * ---------------------------------------------------- */ 
+    /* Masonry
+     * ---------------------------------------------------- */
     var ssMasonryFolio = function () {
-        
+
         var containerBricks = $('.masonry');
 
         containerBricks.imagesLoaded(function () {
@@ -116,31 +116,31 @@
     };
 
 
-   /* photoswipe
-    * ----------------------------------------------------- */
-    var ssPhotoswipe = function() {
+    /* photoswipe
+     * ----------------------------------------------------- */
+    var ssPhotoswipe = function () {
         var items = [],
             $pswp = $('.pswp')[0],
             $folioItems = $('.item-folio');
 
         // get items
-        $folioItems.each( function(i) {
+        $folioItems.each(function (i) {
 
             var $folio = $(this),
-                $thumbLink =  $folio.find('.thumb-link'),
+                $thumbLink = $folio.find('.thumb-link'),
                 $title = $folio.find('.item-folio__title'),
                 $caption = $folio.find('.item-folio__caption'),
                 $titleText = '<h4>' + $.trim($title.html()) + '</h4>',
                 $captionText = $.trim($caption.html()),
                 $href = $thumbLink.attr('href'),
                 $size = $thumbLink.data('size').split('x'),
-                $width  = $size[0],
+                $width = $size[0],
                 $height = $size[1];
-        
+
             var item = {
-                src  : $href,
-                w    : $width,
-                h    : $height
+                src: $href,
+                w: $width,
+                h: $height
             }
 
             if ($caption.length > 0) {
@@ -151,9 +151,9 @@
         });
 
         // bind click event
-        $folioItems.each(function(i) {
+        $folioItems.each(function (i) {
 
-            $(this).on('click', function(e) {
+            $(this).on('click', function (e) {
                 e.preventDefault();
                 var options = {
                     index: i,
@@ -169,10 +169,10 @@
     };
 
 
-   /* slick slider
-    * ------------------------------------------------------ */
-    var ssSlickSlider = function() {
-        
+    /* slick slider
+     * ------------------------------------------------------ */
+    var ssSlickSlider = function () {
+
         $('.testimonials__slider').slick({
             arrows: false,
             dots: true,
@@ -185,16 +185,16 @@
     };
 
 
-   /* Smooth Scrolling
-    * ------------------------------------------------------ */
-    var ssSmoothScroll = function() {
-        
+    /* Smooth Scrolling
+     * ------------------------------------------------------ */
+    var ssSmoothScroll = function () {
+
         $('.smoothscroll').on('click', function (e) {
             var target = this.hash,
-            $target    = $(target);
-            
-                e.preventDefault();
-                e.stopPropagation();
+                $target = $(target);
+
+            e.preventDefault();
+            e.stopPropagation();
 
             $('html, body').stop().animate({
                 'scrollTop': $target.offset().top
@@ -212,22 +212,22 @@
     };
 
 
-   /* Alert Boxes
-    * ------------------------------------------------------ */
-    var ssAlertBoxes = function() {
+    /* Alert Boxes
+     * ------------------------------------------------------ */
+    var ssAlertBoxes = function () {
 
-        $('.alert-box').on('click', '.alert-box__close', function() {
+        $('.alert-box').on('click', '.alert-box__close', function () {
             $(this).parent().fadeOut(500);
-        }); 
+        });
 
     };
 
 
-   /* Animate On Scroll
-    * ------------------------------------------------------ */
-    var ssAOS = function() {
-        
-        AOS.init( {
+    /* Animate On Scroll
+     * ------------------------------------------------------ */
+    var ssAOS = function () {
+
+        AOS.init({
             offset: 200,
             duration: 600,
             easing: 'ease-in-sine',
@@ -239,8 +239,8 @@
     };
 
 
-   /* Initialize
-    * ------------------------------------------------------ */
+    /* Initialize
+     * ------------------------------------------------------ */
     (function clInit() {
 
         ssPreloader();
@@ -255,72 +255,102 @@
 
     })();
 
+
+    function handleFiltermasonry(FilterType) {
+        $('.filtermasonry').hide();
+        switch (FilterType) {
+            case "MARKETING":
+                $('.filtermasonry.MARKETING').show();
+
+                break;
+
+            default:
+                break;
+        }
+    }
+
 })(jQuery);
 
 var map = new GMaps({
     div: '#map',
     lat: -12.043333,
     lng: -77.028333
-  });
-  
-  
-  GMaps.geocode({
+});
+
+
+GMaps.geocode({
     address: 'Germany',
-    callback: function(results, status){
-      var firstResult = results[0];
-      map.setCenter(firstResult.geometry.location.lat(), firstResult.geometry.location.lng());
-      map.setZoom(7);
+    callback: function (results, status) {
+        var firstResult = results[0];
+        map.setCenter(firstResult.geometry.location.lat(), firstResult.geometry.location.lng());
+        map.setZoom(7);
     }
-  }); 
+});
 
+/**
+ * handle Filter masonry 
+ * I love you ;)
+ */
+function handleFiltermasonry(FilterType) {
+    $('.filtermasonry').hide();
+    switch (FilterType) {
+        case "MARKETING":
+        $('.filtermasonry.MARKETING').show();
+        break;
+        
+        case "ALl": default:
+        $('.filtermasonry').show();
+        
+            break;
+    }
+}
 
-  
- // filterSelection
+// filterSelection
 
- filtermasonry("all")
+filtermasonry("all")
 function filtermasonry(c) {
-  var x, i;
-  x = document.getElementsByClassName("filtermasonry");
-  if (c == "all") c = "";
-  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
+    var x, i;
+    x = document.getElementsByClassName("filtermasonry");
+    if (c == "all") c = "";
+    // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+    for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    }
 }
 
 // Show filtered elements
 function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {
-      element.className += " " + arr2[i];
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += " " + arr2[i];
+        }
     }
-  }
 }
 
 // Hide elements that are not selected
 function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1); 
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
     }
-  }
-  element.className = arr1.join(" ");
+    element.className = arr1.join(" ");
 }
 
 // Add active class to the current control button (highlight it)
 var btnContainer = document.getElementById("myBtnContainer");
 var btns = btnContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
+    btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+    });
 }
