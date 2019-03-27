@@ -287,10 +287,7 @@ GMaps.geocode({
     }
 });
 
-/**
- * handle Filter masonry 
- * I love you ;)
- */
+/***  Filter masonry */
 function handleFiltermasonry(FilterType) {
     $('.filtermasonry').hide();
     switch (FilterType) {
