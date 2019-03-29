@@ -278,14 +278,14 @@ var map = new GMaps({
 });
 
 
-GMaps.geocode({
-    address: 'Germany',
-    callback: function (results, status) {
-        var firstResult = results[0];
-        map.setCenter(firstResult.geometry.location.lat(), firstResult.geometry.location.lng());
-        map.setZoom(7);
-    }
-});
+// GMaps.geocode({
+//     address: 'Germany',
+//     callback: function (results, status) {
+//         var firstResult = results[0];
+//         map.setCenter(firstResult.geometry.location.lat(), firstResult.geometry.location.lng());
+//         map.setZoom(7);
+//     }
+// });
 
 /***  Filter masonry */
 function handleFiltermasonry(FilterType) {
@@ -342,12 +342,12 @@ function w3RemoveClass(element, name) {
 }
 
 // Add active class to the current control button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function () {
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-    });
-}
+// var btnContainer = document.getElementById("myBtnContainer");
+// var btns = btnContainer.getElementsByClassName("btn");
+// for (var i = 0; i < btns.length; i++) {
+//     btns[i].addEventListener("click", function () {
+//         var current = document.getElementsByClassName("active");
+//         current[0].className = current[0].className.replace(" active", "");
+//         this.className += " active";
+//     });
+// }

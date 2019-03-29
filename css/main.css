@@ -3556,7 +3556,7 @@ footer a {
 .bl-contact {
   background-color:#cccccc14 ;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 
@@ -3566,6 +3566,7 @@ footer a {
 }
 
 .contact-info {
+  text-align: center;
   margin: 2em 3em;
 }
 
@@ -3751,3 +3752,7 @@ footer a {
 
 
 
+  .text-blue{
+  
+    color: #007ab5;
+  } 
