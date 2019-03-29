@@ -3282,6 +3282,10 @@ color: #FFFFFF;
 .contact-main .contact-email {
   margin-bottom: 3.6rem;
 }
+.contact-email{
+  display: flex;
+    align-items: center;
+}
 
 .contact-email a {
   font-size: 3rem;
@@ -3302,14 +3306,29 @@ color: #FFFFFF;
 .contact-social {
   list-style: none;
   display: inline-block;
-  margin: 4.2rem 0 0 0;
-  font-size: 4.2rem;
+  margin: 0px;
+  font-size: 7.2rem;
 }
 
 .contact-social li {
-  margin-right: 15px;
-  padding-left: 0;
+  padding: 0px 4rem;
+  width: 15rem;
+  height: 15rem;
+  margin: 0px;
   display: inline-block;
+  border: 1px solid;
+  align-items: center;
+}
+@media(max-width: 500px){
+  .contact-social li {
+        padding: 0px;
+        width: 5rem;
+        height: 0px;
+        margin: 0px;
+        display: inline-block;
+        border: 0px;
+        align-items: center;
+  }
 }
 
 .contact-social li a {
@@ -3425,6 +3444,11 @@ color: #FFFFFF;
   }
 }
 
+
+.fa-map-marker-alt:before , .fa-phone:before , .fa-envelope:before {
+  color: #007ab5;
+ 
+}
 /* ===================================================================
  * # footer
  *
@@ -3568,6 +3592,56 @@ footer a {
 .contact-info {
   text-align: center;
   margin: 2em 3em;
+  display: flex;
+  flex-direction: column;
+}
+
+.d-flex-row{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-bottom: 1em;
+}
+
+@media(max-width:500px){
+  .d-flex-row{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+  }
+
+.address-wrapper, .contact-wrapper, .email-wrapper {
+  margin: 0px 4em;
+}
+
+
+@media(max-width:500px){
+ .address-wrapper, .contact-wrapper, .email-wrapper {
+  margin: 0px;
+}
+}
+
+.contact-wrapper h3 , .address-wrapper h3{
+  color: #007ab5;
+}
+
+@media(max-width:500px){
+  .contact-wrapper h3{
+    font-size: 2.3rem;
+  }
+}
+
+@media(max-width:500px){
+  .block-small{
+    display: block;
+    padding-left: 2em;
+  }
+}
+
+.ico-p{
+  margin-right: 1rem
 }
 
 #map {
@@ -3576,7 +3650,7 @@ footer a {
   background: #ddd;
 }
 
-@media (max-width:500px) {
+@media  only screen and (max-width:500px) {
   .bl-contact{
     flex-direction: column;
     text-align: center;
@@ -3756,3 +3830,7 @@ footer a {
   
     color: #007ab5;
   } 
+
+  .services_page .btn-group .smoothscroll.btn.btn--primary{
+    min-width: 20%;
+  }
