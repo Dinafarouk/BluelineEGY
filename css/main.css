@@ -95,7 +95,9 @@ body {
  * ------------------------------------------------------------------- */
  .pswp *{
   color: rgb(255, 255, 255);
+  font-size: 19px;
 }
+
  
 
 a {
@@ -185,7 +187,6 @@ h5, .h5 {
 h6, .h6 {
   font-size: 1.6rem;
   line-height: 1.3125;
-  text-transform: uppercase;
   letter-spacing: .16rem;
 }
 
@@ -1142,6 +1143,31 @@ body.menu-is-open {
   text-align: center;
 }
 
+
+.display-3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 1.5;
+  letter-spacing: -0.03rem;
+  margin-top: 50px;
+  margin-bottom: 0.2rem;
+  text-align: center;
+}
+
+@media(max-width:500px){
+  .display-3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 2.1rem;
+    line-height: 1.5;
+    letter-spacing: -0.03rem;
+    margin-top: 50px;
+    margin-bottom: 0.2rem;
+    text-align: center;
+} 
+}
+
 .subhead {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -1791,6 +1817,8 @@ text-align: center;
 }
 
 
+
+
 .home-content h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -1949,6 +1977,18 @@ text-align: center;
   height: auto;
 }
 
+.home-content span{
+  font-weight: bold;
+  font-size: 45px;
+}
+
+@media(max-width:500px){
+  .home-content span{
+    font-weight: bold;
+    font-size: 40px;
+  }
+  
+}
 
 .home-content.home-content .home-content__main img {
   width: 50%;
@@ -2631,7 +2671,7 @@ html.no-csstransitions .home-content__main {
   background-color: #007ab5;
 }
 
-
+/* 
 .s-works::before {
   content: "";
   display: block;
@@ -2644,9 +2684,9 @@ html.no-csstransitions .home-content__main {
   width: 50%;
   height: 100%;
   opacity: .3;
-  background-image: url(../images/pattern.jpg);
-  background-size: 760px 380px;
-}
+  /* background-image: url(../images/pattern.jpg); */
+  /* background-size: 760px 380px; */
+/* } */ */
 /* Add a light grey background on mouse-over */
 .s-works .btn:hover {
   background-color: #121212;
@@ -3779,15 +3819,30 @@ footer a {
 }
 
 @media(max-width:500px){
-  .s-about.target-section .value5 h3{
-    font-size: 2.2rem;
-    margin-bottom: 8.2rem;
-  }
+  .s-about.target-section .value h3 {
+    margin-bottom: 1em;
+    font-size: 1.7em;
+}
+}
+
+@media(max-width:500px){
+  .s-about.target-section .value5 h3 {
+    margin-bottom: 1em;
+    font-size: 2.1rem;
+  
+}
 }
 
 .s-about.target-section .value h4{
   margin-top: 1rem;
   font-size: 1.8em;
+}
+@media(max-width:500px){
+  .s-about.target-section .value h4{
+    margin-top: 1rem;
+    font-size: 1.8em;
+    text-align: center;
+  }
 }
   .about-page .item-folio, .about-page .item-folio img{
     width: 100%;
